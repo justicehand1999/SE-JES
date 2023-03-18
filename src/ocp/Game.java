@@ -5,9 +5,11 @@ public class Game {
         Pikachu pikachu = new Pikachu(2,"피카",300);
         Rezamong rezamong = new Rezamong(5,"리자몽",500);
 
-        pikachu.attack();
+        Poketmon poketmon = new Pikachu(2,"ddd",302);
+
+        poketmon.attack();
         rezamong.attack();
-        pikachu.evolve();
+        poketmon.evolve();
         rezamong.evolve();
     }
 }
