@@ -8,25 +8,25 @@ public interface Poketmon {
     void fry();
     void swim();
 }
-class Pikachu implements Poketmon{
-
-    @Override
-    public void attack() {
-
-    }
-
-    @Override
-    public void defend() {
-
-    }
-
-    @Override
-    public void fry() {
-
-    }
-
-    @Override
-    public void swim() {
-
-    }
-}
+//class Pikachu implements Poketmon{
+//
+//    @Override
+//    public void attack() {
+//
+//    }
+//
+//    @Override
+//    public void defend() {
+//
+//    }
+//
+//    @Override
+//    public void fry() {
+//
+//    }
+//
+//    @Override
+//    public void swim() {
+//
+//    }
+//}
