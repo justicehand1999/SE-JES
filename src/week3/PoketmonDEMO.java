@@ -2,23 +2,24 @@ package week3;
 
 
 
-class FirePoketmon extends PoketmonDEMO {
+class FirePoketmon implements PoketmonDEMO {
     @Override
     public void attack() {
-        System.out.println("불공겅");
-    }
-
-    public FirePoketmon() {
+        System.out.println("불공격 성공");
     }
 }
-class WaterPoketmon extends PoketmonDEMO {
+class WaterPoketmon implements PoketmonDEMO {
 
-}
-
-class ElectricPoketmon extends PoketmonDEMO {
     @Override
     public void attack() {
-        throw new UnsupportedOperationException("미구현");
+        System.out.println("물대포~~! 성공");
+    }
+}
+
+class ElectricPoketmon implements PoketmonDEMO {
+    @Override
+    public void attack() {
+        System.out.println("전기tjdhrd!W");
     }
 }
 
@@ -29,16 +30,15 @@ class Triner{
     }
 }
 
-public class PoketmonDEMO {
+interface PoketmonDEMO {
     public static void main(String[] args) {
         Triner triner=new Triner();
         triner.attackPoketmon(new FirePoketmon());
         triner.attackPoketmon(new ElectricPoketmon());
         triner.attackPoketmon(new WaterPoketmon());
     }
-    public void attack(){
-        System.out.println("공격실패!");
-    }
+//    public abstract void attack();
+    void attack();
 
 }
 
